@@ -1,0 +1,18 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true          # turn on service discovery
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
